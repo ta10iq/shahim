@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قصص الأطفال</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient(135deg, #ffb6c1, #add8e6, #ffeb3b);
+            background-size: 300% 300%;
+            animation: gradientAnimation 10s ease infinite;
+            font-family: 'Comic Sans MS', sans-serif;
+            direction: rtl;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .story-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .story-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .story-item:hover {
+            transform: scale(1.05);
+        }
+
+        .story-item img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .story-item button {
+            padding: 10px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffcc66;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .story-item button:hover {
+            background-color: #f0b76e;
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>قصص الأطفال</h1>
+    <div class="story-list">
+        <!-- القصة 1 -->
+        <div class="story-item" onclick="playSound(); showStory(https://mawdoo3.com/%D9%82%D8%B5%D8%A9_%D8%A7%D9%84%D8%AB%D8%B9%D9%84%D8%A8_%D8%A7%D9%84%D9%85%D9%83%D8%A7%D8%B1_%D9%88%D8%A7%D9%84%D8%AF%D9%8A%D9%83)">
+            <img src="https://example.com/story1.png" alt="قصة 1">
+            <button>القصة 1: الثعلب المكار</button>
+        </div>
+        <!-- القصة 2 -->
+        <div class="story-item" onclick="playSound(); showStory(2)">
+            <img src="https://example.com/story2.png" alt="قصة 2">
+            <button>القصة 2: الأرنب السريع</button>
+        </div>
+        <!-- القصة 3 -->
+        <div class="story-item" onclick="playSound(); showStory(3)">
+            <img src="https://example.com/story3.png" alt="قصة 3">
+            <button>القصة 3: النملة المجتهدة</button>
+        </div>
+        <!-- القصة 4 -->
+        <div class="story-item" onclick="playSound(); showStory(4)">
+            <img src="https://example.com/story4.png" alt="قصة 4">
+            <button>القصة 4: الأسد الشجاع</button>
+        </div>
+        <!-- القصة 5 -->
+        <div class="story-item" onclick="playSound(); showStory(5)">
+            <img src="https://example.com/story5.png" alt="قصة 5">
+            <button>القصة 5: الدب الضخم</button>
+        </div>
+    </div>
+
+    <!-- صوت النقر -->
+    <audio id="click-sound" src="https://www.example.com/click-sound.mp3"></audio>
+
+    <script>
+        function playSound() {
+            const sound = document.getElementById('click-sound');
+            sound.play();
+        }
+
+        function showStory(storyNumber) {
+            alert("عرض القصة " + storyNumber + " قريبا!");
+            // هنا يمكنك عرض القصة بتفاصيلها
+        }
+    </script>
+</body>
+</html>

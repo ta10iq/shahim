@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الأطفال</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ffb6c1, #add8e6, #ffeb3b);
+            background-size: 300% 300%;
+            animation: gradientAnimation 10s ease infinite;
+            font-family: 'Comic Sans MS', sans-serif;
+            direction: rtl;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        button {
+            width: 300px;
+            padding: 20px;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        button:nth-child(1) {
+            background-color: #ffcccc;
+        }
+
+        button:nth-child(2) {
+            background-color: #ccffcc;
+        }
+
+        button:nth-child(3) {
+            background-color: #ccccff;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background-color: #f0e68c;
+        }
+
+        .cartoon-image {
+            width: 100px;
+            margin-left: 20px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>مرحبا شــهـم😍</h1>
+        <div class="button-container">
+        </button>
+            <button onclick="window.location.href='s3.html'">
+                قصص أطفال
+                <img src="C:\Users\b8940\OneDrive\Desktop\ICO\قصص.PNG" alt="رسمة كتاب" class="cartoon-image">
+            </button>
+            <button onclick="window.location.href='s2.html'">
+                أغاني أطفال
+                <img src="C:\Users\b8940\OneDrive\Desktop\ICO\اغاني.PNG" alt="رسمة ميكروفون" class="cartoon-image">
+            </button>
+            <button onclick="window.location.href='s4.html'">
+                ألعاب أطفال
+                <img src="C:\Users\b8940\OneDrive\Desktop\ICO\العاب.PNG" alt="رسمة لعبة" class="cartoon-image">
+            </button>
+        </div>
+    </div>
+</body>
+</html>
+

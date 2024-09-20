@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ألعاب الأطفال</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient(135deg, #ffb6c1, #add8e6, #ffeb3b);
+            background-size: 300% 300%;
+            animation: gradientAnimation 10s ease infinite;
+            font-family: 'Comic Sans MS', sans-serif;
+            direction: rtl;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .game-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .game-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .game-item:hover {
+            transform: scale(1.05);
+        }
+
+        .game-item img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-bottom: 15px;
+        }
+
+        .game-item button {
+            padding: 10px 15px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffcc66;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .game-item button:hover {
+            background-color: #f0b76e;
+        }
+    </style>
+</head>
+<body>
+    <h1>ألعاب الأطفال</h1>
+    <div class="game-list">
+        <!-- لعبة 1 -->
+        <div class="game-item" onclick="playGame(1)">
+            
+            <button>لعبة 1: البازل الممتع</button>
+        </div>
+        <!-- لعبة 2 -->
+        <div class="game-item" onclick="playGame(2)">
+            <img src="https://example.com/game2.png" alt="لعبة 2">
+            <button>لعبة 2: مسابقة الألوان</button>
+        </div>
+        <!-- لعبة 3 -->
+        <div class="game-item" onclick="playGame(3)">
+            <img src="https://example.com/game3.png" alt="لعبة 3">
+            <button>لعبة 3: سباق السيارات</button>
+        </div>
+        <!-- لعبة 4 -->
+        <div class="game-item" onclick="playGame(4)">
+            <img src="https://example.com/game4.png" alt="لعبة 4">
+            <button>لعبة 4: عالم الحيوانات</button>
+        </div>
+        <!-- لعبة 5 -->
+        <div class="game-item" onclick="playGame(5)">
+            <img src="https://example.com/game5.png" alt="لعبة 5">
+            <button>لعبة 5: الأرقام السحرية</button>
+        </div>
+    </div>
+
+    <script>
+        function playGame(gameNumber) {
+            if (gameNumber === 1) {
+                window.location.href = 'https://ar.crazygames.com/game/skydom'; // توجيه إلى موقع لعبة البازل الممتع
+            } else if (gameNumber === 2) {
+                alert("مسابقة الألوان ستبدأ قريباً!");
+            } else if (gameNumber === 3) {
+                alert("سباق السيارات سيبدأ قريباً!");
+            } else if (gameNumber === 4) {
+                alert("عالم الحيوانات سيبدأ قريباً!");
+            } else if (gameNumber === 5) {
+                alert("الأرقام السحرية ستبدأ قريباً!");
+            }
+        }
+    </script>
+</body>
+</html>

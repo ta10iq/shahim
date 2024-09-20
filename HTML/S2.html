@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أغاني الأطفال</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient(135deg, #ffb6c1, #add8e6, #ffeb3b);
+            background-size: 300% 300%;
+            animation: gradientAnimation 10s ease infinite;
+            font-family: 'Comic Sans MS', sans-serif;
+            direction: rtl;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .song-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .song-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .song-item span {
+            font-size: 1.5em;
+        }
+
+        .song-item button {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffcc66;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .song-item button:hover {
+            background-color: #f0b76e;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>أغاني الأطفال</h1>
+    <div class="song-list">
+        <!-- أغنية 1 -->
+        <div class="song-item">
+            <span>أغنية 1</span>
+            <button onclick="playSong(1)">تشغيل</button>
+        </div>
+        <!-- أغنية 2 -->
+        <div class="song-item">
+            <span>أغنية 2</span>
+            <button onclick="playSong(2)">تشغيل</button>
+        </div>
+        <!-- أغنية 3 -->
+        <div class="song-item">
+            <span>أغنية 3</span>
+            <button onclick="playSong(3)">تشغيل</button>
+        </div>
+        <!-- أغنية 4 -->
+        <div class="song-item">
+            <span>أغنية 4</span>
+            <button onclick="playSong(4)">تشغيل</button>
+        </div>
+        <!-- أغنية 5 -->
+        <div class="song-item">
+            <span>أغنية 5</span>
+            <button onclick="playSong(5)">تشغيل</button>
+        </div>
+        <!-- أغنية 6 -->
+        <div class="song-item">
+            <span>أغنية 6</span>
+            <button onclick="playSong(6)">تشغيل</button>
+        </div>
+        <!-- أغنية 7 -->
+        <div class="song-item">
+            <span>أغنية 7</span>
+            <button onclick="playSong(7)">تشغيل</button>
+        </div>
+        <!-- أغنية 8 -->
+        <div class="song-item">
+            <span>أغنية 8</span>
+            <button onclick="playSong(8)">تشغيل</button>
+        </div>
+        <!-- أغنية 9 -->
+        <div class="song-item">
+            <span>أغنية 9</span>
+            <button onclick="playSong(9)">تشغيل</button>
+        </div>
+        <!-- أغنية 10 -->
+        <div class="song-item">
+            <span>أغنية 10</span>
+            <button onclick="playSong(10)">تشغيل</button>
+        </div>
+        <!-- أغنية 11 -->
+        <div class="song-item">
+            <span>أغنية 11</span>
+            <button onclick="playSong(11)">تشغيل</button>
+        </div>
+        <!-- أغنية 12 -->
+        <div class="song-item">
+            <span>أغنية 12</span>
+            <button onclick="playSong(12)">تشغيل</button>
+        </div>
+        <!-- أغنية 13 -->
+        <div class="song-item">
+            <span>أغنية 13</span>
+            <button onclick="playSong(13)">تشغيل</button>
+        </div>
+        <!-- أغنية 14 -->
+        <div class="song-item">
+            <span>أغنية 14</span>
+            <button onclick="playSong(14)">تشغيل</button>
+        </div>
+        <!-- أغنية 15 -->
+        <div class="song-item">
+            <span>أغنية 15</span>
+            <button onclick="playSong(15)">تشغيل</button>
+        </div>
+        <!-- أغنية 16 -->
+        <div class="song-item">
+            <span>أغنية 16</span>
+            <button onclick="playSong(16)">تشغيل</button>
+        </div>
+        <!-- أغنية 17 -->
+        <div class="song-item">
+            <span>أغنية 17</span>
+            <button onclick="playSong(17)">تشغيل</button>
+        </div>
+        <!-- أغنية 18 -->
+        <div class="song-item">
+            <span>أغنية 18</span>
+            <button onclick="playSong(18)">تشغيل</button>
+        </div>
+        <!-- أغنية 19 -->
+        <div class="song-item">
+            <span>أغنية 19</span>
+            <button onclick="playSong(19)">تشغيل</button>
+        </div>
+        <!-- أغنية 20 -->
+        <div class="song-item">
+            <span>أغنية 20</span>
+            <button onclick="playSong(20)">تشغيل</button>
+        </div>
+    </div>
+
+    <script>
+        function playSong(songNumber) {
+            alert("تشغيل أغنية " + songNumber);
+        }
+    </script>
+</body>
+</html>
+<script>
+    function playSong(1) {
+        let songs = [
+            "C:\Users\b8940\OneDrive\Desktop\اغاني اطفال\دق دق الباب الثعلب والذئب -  أغاني أطفال - قناة أسرتنا.mp3",  // أغنية 1 - دق دق الباب الثعلب والذئب
+            // يمكنك إضافة المزيد من الأغاني هنا لاحقًا
+        ];
+        
+        if(songNumber <= songs.length) {
+            const audio = new Audio(songs[songNumber - 1]);
+            audio.play();
+        } else {
+            alert("الأغنية غير موجودة");
+        }
+    }
+</script>
